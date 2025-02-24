@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MeuSistema - Home</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="header-left">
+      <h1>MeuSistema</h1>
+      <button class="menu-toggle">☰</button>
+    </div>
+    <div class="header-right">
+      <button class="icon-btn">🎥</button>
+      <button class="icon-btn">💬</button>
+      <span>Usuário</span>
+    </div>
+  </header>
+
+  <nav class="sidebar">
+    <ul>
+      <li><span>📊</span> Dashboard</li>
+      <li><span>🔍</span> Análises</li>
+      <li><span>👤</span> Clientes</li>
+      <li><span>📦</span> Produtos</li>
+      <li><span>🏬</span> Estoque</li>
+      <li><span>🛒</span> Compras</li>
+      <li><span>📋</span> Relatórios</li>
+      <li><span>📍</span> Acompanhamento de Venda</li>
+      <li><span>🛠️</span> Organização</li>
+      <li><span>🔄</span> Devoluções</li>
+      <li><span>💰</span> Financeiro</li>
+      <li><span>📊</span> Fiscal</li>
+      <li><span>⚙️</span> Serviços</li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="breadcrumb">
+      <span>Vendas X</span>
+      <span>Venda incluída X</span>
+    </div>
+    <div class="tabs">
+      <button class="tab active">Principal</button>
+      <button class="tab">Itens</button>
+      <button class="tab">Entrega</button>
+      <button class="tab">Totalizadores</button>
+      <button class="tab active">Negociação</button>
+    </div>
+
+    <div class="content">
+      <div class="section">
+        <h2>Negociação</h2>
+        <div class="form-group">
+          <label>Tabela de preço *</label>
+          <select>
+            <option>TABELA PADRÃO</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Pagamento</h2>
+        <div class="payment-row">
+          <div class="form-group">
+            <label>Espécie de pagamento *</label>
+            <select>
+              <option>BOLETO BANCÁRIO</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Condição de pagamento *</label>
+            <select>
+              <option>30 DIAS</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Valor R$ *</label>
+            <input type="number" value="35.00" step="0.01">
+          </div>
+          <button class="remove-btn">✖</button>
+        </div>
+        <div class="payment-row">
+          <div class="form-group">
+            <label>Espécie de pagamento *</label>
+            <select>
+              <option>DINHEIRO</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Condição de pagamento *</label>
+            <select>
+              <option>Selecione condição de pagamento</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Valor R$ *</label>
+            <input type="number" value="0.00" step="0.01">
+          </div>
+          <button class="remove-btn">✖</button>
+        </div>
+        <button class="add-payment">+ Incluir forma de pagamento</button>
+      </div>
+
+      <div class="section">
+        <button class="generate-bill">Gerar cobranças</button>
+        <div class="sale-info">
+          <p><span>🏷️</span> Venda: 7161788111</p>
+          <p><span>📅</span> Emissão: 08/04/2021 10:21</p>
+          <p><span>👤</span> Cliente: MARCIO ROBSON DE SOUZA</p>
+          <p><span>💰</span> Tabela de preço: TABELA PADRÃO</p>
+          <p><span>💵</span> Valor total R$ 70.00</p>
+        </div>
+      </div>
+
+      <div class="status-section">
+        <label>Status</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox"> Validada</label>
+          <label><input type="checkbox"> Finalizada</label>
+          <label><input type="checkbox"> Financeiro gerado</label>
+          <label><input type="checkbox"> E-mail enviado</label>
+          <label><input type="checkbox"> Consignada</label>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <button class="save-btn">Salvar</button>
+      <button class="cancel-btn">Cancelar</button>
+      <img src="logo.png" alt="MeuSistema Logo" class="footer-logo">
+    </footer>
+  </main>
+</div>
+<script src="home.js"></script>
+</body>
+</html>
